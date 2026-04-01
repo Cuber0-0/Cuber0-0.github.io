@@ -1,32 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>tchaikvec</title>
-<link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tchaikvec | 个人主页</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入图标库（用于导航栏搜索、底部邮件/RSS图标） -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-<div class="main">
+    <!-- 顶部导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#about" class="nav-link active">about</a>
+            <a href="#blog" class="nav-link">blog</a>
+            <a href="#publications" class="nav-link">publications</a>
+            <a href="#cv" class="nav-link">CV</a>
+            <a href="#people" class="nav-link">people</a>
+            <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+            <a href="#" class="nav-icon"><i class="fas fa-moon"></i></a>
+        </div>
+    </nav>
 
-  <h1>tchaik</h1>
-  <p class="desc">neutral vector / quiet harmony</p>
+    <!-- 主内容区 -->
+    <main class="container">
+        <!-- 个人信息区 -->
+        <section id="about" class="about-section">
+            <div class="about-text">
+                <h1>tchaikvec</h1>
+                <p>你好，这里是tchaikvec（常用ID可自定义，你可以认为「XX」是我的自设）。。目前对感兴趣，研究方向包含以下三部分：</p>
+                
+                <p class="en-intro">
+                My research focuses on 
+                    <li>Entities that are tangible and perceptible in the real world are intuitive, as are the theories that describe them.</li>
+                    
+                </ul>
+            </div>
+            <div class="about-avatar">
+                <!-- 替换成你自己的头像图片 -->
+                <img src="avatar.png" alt="avatar">
+            </div>
+        </section>
 
-  <div class="block">
-    <h2>About me</h2>
-    <p>Interested in machine learning, theoretical computing, and classical music.</p>
-  </div>
+        <!-- 最新博客区 -->
+        <section id="blog" class="blog-section">
+            <h2>latest posts</h2>
+            <div class="post-list">
+                <div class="post-item">
+                    <span class="post-date">Mar 30, 2026</span>
+                    <a href="#" class="post-title">第一篇</a>
+                </div>
+                <div class="post-item">
+                    <span class="post-date">Mar 30, 2026</span>
+                    <a href="#" class="post-title">第二篇</a>
+                </div>
+            </div>
+        </section>
 
-  <div class="block">
-    <h2>Notes</h2>
-    <p>Personal notes about math, algorithms, and harmony.</p>
-  </div>
+        <!-- 论文区 -->
+        <section id="publications" class="pub-section">
+            <h2>selected publications</h2>
+            <div class="pub-list">
+                <!-- 论文1 -->
+                <div class="pub-item">
+                    <div class="pub-thumb">
+                        <img src="pub1.png" alt="paper1">
+                    </div>
+                    <div class="pub-info">
+                        <h3 class="pub-title">WFR-FM: Simulation-Free Dynamic Unbalanced Optimal Transport</h3>
+                        <p class="pub-authors">Qiangwei Peng<sup>†</sup>, Zihan Wang<sup>†</sup>, Junda Ying<sup>†</sup>, and 5 more authors</p>
+                        <p class="pub-venue">ICLR 2026, 2026</p>
+                        <div class="pub-links">
+                            <a href="#" class="pub-btn">ARXIV</a>
+                            <a href="#" class="pub-btn">HTML</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <div class="math">
-    $$\|v\| = 0 \quad \text{zero vector, no direction, no magnitude}$$
-  </div>
-
-</div>
+        <!-- 底部联系方式 -->
+        <footer class="footer">
+            <div class="footer-icons">
+                <a href="shsx201467@163.com" class="footer-icon"><i class="fas fa-envelope"></i></a>
+                <a href="#" class="footer-icon"><i class="fas fa-rss"></i></a>
+            </div>
+            <p class="footer-note">You can even add a little note about which of these is the best way to reach you.</p>
+        </footer>
+    </main>
 </body>
 </html>
