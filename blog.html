@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maka Baka's Blog | HAHAHA</title>
     <link rel="stylesheet" href="style.css">
-    <!-- 引入图标库 -->
     <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -29,7 +28,6 @@
             line-height: 1.6;
         }
 
-        /* 导航栏（复用你个人站的样式） */
         .navbar {
             border-bottom: 1px solid var(--border-color);
             padding: 1rem 0;
@@ -82,14 +80,12 @@
             color: var(--accent-color);
         }
 
-        /* 博客主容器 */
         .blog-container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 4rem 2rem;
         }
 
-        /* 博客头部 */
         .blog-header {
             text-align: center;
             margin-bottom: 3rem;
@@ -111,7 +107,6 @@
             font-weight: 300;
         }
 
-        /* 标签栏 */
         .blog-tags {
             display: flex;
             justify-content: center;
@@ -136,7 +131,6 @@
             opacity: 0.8;
         }
 
-        /* 文章列表 */
         .post-list {
             display: flex;
             flex-direction: column;
@@ -189,7 +183,6 @@
             text-decoration: underline;
         }
 
-        /* 响应式适配 */
         @media (max-width: 768px) {
             .blog-title {
                 font-size: 3rem;
@@ -204,82 +197,76 @@
     </style>
 </head>
 <body>
-    <!-- 顶部导航栏（和你个人站统一） -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="/" class="nav-brand">Ben Ben</a>
-            <div class="nav-links">
-                <a href="/about" class="nav-link">about</a>
-                <a href="/blog" class="nav-link active">blog</a>
-                <a href="/publications" class="nav-link">publications</a>
-                <a href="/cv" class="nav-link">CV</a>
-                <a href="/people" class="nav-link">people</a>
-                <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
-                <a href="#" class="nav-icon"><i class="fas fa-moon"></i></a>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-brand">Ben Ben</a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">about</a>
+            <a href="blog.html" class="nav-link active">blog</a>
+            <a href="publications.html" class="nav-link">publications</a>
+            <a href="cv.html" class="nav-link">CV</a>
+            <a href="people.html" class="nav-link">people</a>
+            <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+            <a href="#" class="nav-icon"><i class="fas fa-moon"></i></a>
+        </div>
+    </div>
+</nav>
+
+<main class="blog-container">
+    <header class="blog-header">
+        <h1 class="blog-title">Maka Baka's Blog</h1>
+        <p class="blog-subtitle">哈哈哈</p>
+    </header>
+
+    <div class="blog-tags">
+        <a href="javascript:;" class="tag">generative_models</a>
+    </div>
+
+    <div class="post-list">
+        <article class="post-item">
+            <a href="javascript:;" class="post-title">读书笔记</a>
+            <p class="post-excerpt">如题</p>
+            <div class="post-meta">
+                <span>1 min read</span>
+                <span>·</span>
+                <span>March 31, 2026</span>
+                <span>·</span>
+                <a href="javascript:;"># theoretical_physics</a>
+                <span>·</span>
+                <a href="blog.html">blog</a>
             </div>
-        </div>
-    </nav>
+        </article>
 
-    <!-- 博客主内容区 -->
-    <main class="blog-container">
-        <!-- 博客头部 -->
-        <header class="blog-header">
-            <h1 class="blog-title">Maka Baka's Blog</h1>
-            <p class="blog-subtitle">哈哈哈</p>
-        </header>
+        <article class="post-item">
+            <a href="javascript:;" class="post-title">博客二</a>
+            <p class="post-excerpt">博客二</p>
+            <div class="post-meta">
+                <span>5 min read</span>
+                <span>·</span>
+                <span>March 30, 2026</span>
+                <span>·</span>
+                <a href="javascript:;"># control_theory</a>
+                <span>·</span>
+                <a href="blog.html">blog</a>
+            </div>
+        </article>
 
-        <!-- 标签分类栏 -->
-        <div class="blog-tags">
-            <a href="/tags/generative_models" class="tag">generative_models</a>
-        </div>
+        <article class="post-item">
+            <a href="javascript:;" class="post-title">第三</a>
+            <p class="post-excerpt">第三</p>
+            <div class="post-meta">
+                <span>read</span>
+                <span>·</span>
+                <span>March 28, 2026</span>
+                <span>·</span>
+                <a href="javascript:;"># generative_models</a>
+                <span>·</span>
+                <a href="blog.html">blog</a>
+            </div>
+        </article>
+    </div>
+</main>
 
-        <!-- 文章列表 -->
-        <div class="post-list">
-            <!-- 文章1：量子场论读书笔记 -->
-            <article class="post-item">
-                <a href="/blog/quantum-field-theory-notes" class="post-title">读书笔记</a>
-                <p class="post-excerpt">如题</p>
-                <div class="post-meta">
-                    <span>1 min read</span>
-                    <span>·</span>
-                    <span>March 31, 2026</span>
-                    <span>·</span>
-                    <a href="/tags/theoretical_physics"># theoretical_physics</a>
-                    <span>·</span>
-                    <a href="/blog">blog</a>
-                </div>
-            </article>
-
-            <!-- 文章2：控制理论：新视野 -->
-            <article class="post-item">
-                <a href="/blog/control-theory-new-perspective" class="post-title">博客二</a>
-                <p class="post-excerpt">博客二</p>
-                <div class="post-meta">
-                    <span>5 min read</span>
-                    <span>·</span>
-                    <span>March 30, 2026</span>
-                    <span>·</span>
-                    <a href="/tags/control_theory"># control_theory</a>
-                    <span>·</span>
-                    <a href="/blog">blog</a>
-                </div>
-            </article>
-
-            <!-- 文章3：生成式模型基础 -->
-            <article class="post-item">
-                <a href="/blog/generative-models-basics" class="post-title">第三</a>
-                <p class="post-excerpt">第三</p>
-                <div class="post-meta">
-                    <span>read</span>
-                    <span>·</span>
-                    <span>March 28, 2026</span>
-                    <span>·</span>
-                    <a href="/tags/generative_models"># generative_models</a>
-                    <span>·</span>
-                    <a href="/blog">blog</a>
-                </div>
-            </article>
-        </div>
-    </main>
 </body>
 </html>
